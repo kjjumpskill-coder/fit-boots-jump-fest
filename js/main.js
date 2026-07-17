@@ -223,24 +223,20 @@
   if(hasGSAP){
     if(!reduceMotion){
       gsap.timeline({
-        scrollTrigger: { trigger:'.curtain-section', start:'top top', end:'+=100%', scrub:.5, pin:'.curtain-inner' }
+        scrollTrigger: { trigger:'.curtain-section', start:'top 78%', toggleActions:'play none none reverse' }
       })
-      .fromTo('.curtain-panel.left', { xPercent:0 }, { xPercent:-100, ease:'none', duration:1 }, 0)
-      .fromTo('.curtain-panel.right', { xPercent:0 }, { xPercent:100, ease:'none', duration:1 }, 0)
-      .fromTo('.curtain-content .tag', { opacity:0, y:12 }, { opacity:1, y:0, ease:'power2.out', duration:.35 }, .03)
-      .fromTo('.curtain-content h2', { opacity:0, scale:.9 }, { opacity:1, scale:1, ease:'power2.out', duration:.45 }, .1);
+      .fromTo('.curtain-panel.left', { xPercent:0 }, { xPercent:-100, ease:'power2.inOut', duration:1.1 }, 0)
+      .fromTo('.curtain-panel.right', { xPercent:0 }, { xPercent:100, ease:'power2.inOut', duration:1.1 }, 0)
+      .fromTo('.curtain-content .tag', { opacity:0, y:12 }, { opacity:1, y:0, ease:'power2.out', duration:.5 }, .25)
+      .fromTo('.curtain-content h2', { opacity:0, scale:.9 }, { opacity:1, scale:1, ease:'power2.out', duration:.6 }, .35);
     } else {
       gsap.set('.curtain-panel.left', { xPercent:-100 });
       gsap.set('.curtain-panel.right', { xPercent:100 });
     }
   } else {
-    /* fallback: no scroll-pin available, keep curtain simply open so
-       the Gala section below stays reachable and readable */
-    document.querySelectorAll('.curtain-panel').forEach(function(p){ p.style.transform = 'translateX(0)'; });
-    var curtainSection = document.querySelector('.curtain-section');
-    if(curtainSection) curtainSection.style.height = 'auto';
-    var curtainInner = document.querySelector('.curtain-inner');
-    if(curtainInner) curtainInner.style.position = 'relative';
+    /* fallback: no animation library available, keep curtain simply
+       open (static) so the heading stays visible and readable */
+    document.querySelectorAll('.curtain-panel').forEach(function(p){ p.style.transition = 'none'; });
     document.querySelector('.curtain-panel.left') && (document.querySelector('.curtain-panel.left').style.transform = 'translateX(-100%)');
     document.querySelector('.curtain-panel.right') && (document.querySelector('.curtain-panel.right').style.transform = 'translateX(100%)');
   }
