@@ -358,10 +358,10 @@ p{ margin:0; }
 
 /* =============== CURTAIN TRANSITION =============== */
 .curtain-section{
-  height:100vh; position:relative; overflow:hidden;
+  height:72vh; min-height:520px; position:relative; overflow:hidden;
   background:var(--g-black);
 }
-.curtain-section .curtain-inner{ position:sticky; top:0; height:100vh; overflow:hidden; }
+.curtain-section .curtain-inner{ position:relative; height:100%; overflow:hidden; }
 .curtain-panel{
   position:absolute; top:0; bottom:0; width:52%;
   background:linear-gradient(180deg,#1c0206,#050203 60%);
@@ -381,15 +381,21 @@ p{ margin:0; }
 .curtain-content{
   position:absolute; inset:0; z-index:2; display:flex; align-items:center; justify-content:center;
   flex-direction:column; text-align:center; padding:0 24px;
-  transform:translateY(-7%);
 }
-.curtain-content .tag{ font-family:var(--f-body); letter-spacing:4px; text-transform:uppercase; font-size:13px; color:var(--g-gold); margin-bottom:14px; }
+.curtain-content .tag{ font-family:var(--f-body); letter-spacing:4px; text-transform:uppercase; font-size:15px; color:var(--g-gold); margin-bottom:18px; }
 .curtain-content h2{
   font-family:var(--f-gala); font-style:italic; font-weight:900;
-  font-size:clamp(34px,7vw,86px); color:var(--g-gold-light);
-  text-shadow:0 0 40px rgba(212,175,55,.4);
+  font-size:clamp(64px,14vw,168px); color:var(--g-gold-light);
+  text-shadow:0 0 50px rgba(212,175,55,.5);
+  line-height:1;
 }
 .curtain-star{ position:absolute; color:var(--g-gold); opacity:.7; }
+
+@media (max-width: 680px){
+  .curtain-section{ height:56vh; min-height:400px; }
+  .curtain-content h2{ font-size:clamp(40px,13vw,72px); }
+}
+
 
 /* =============== GALA =============== */
 .gala{
