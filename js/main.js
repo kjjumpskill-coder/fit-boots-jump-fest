@@ -149,24 +149,137 @@
 
   /* ================= INSTRUCTORS ================= */
   var instructors = [
-    { name:'Інструктор 1', role:'Ребаунд-фітнес' },
-    { name:'Інструктор 2', role:'Кросс-джамп' },
-    { name:'Інструктор 3', role:'ZUMBA' },
-    { name:'Інструктор 4', role:'Dance Fit' },
-    { name:'Інструктор 5', role:'ZUMBA' },
-    { name:'Інструктор 6', role:'Ребаунд-фітнес' }
+    {
+      name:"Дар'я Бааджи & Марина Чарковська",
+      role:"Міжнародні презентери Fitboots",
+      photo:"assets/instr_01.webp",
+      bio:[
+        "Дар'я Бааджи — міжнародний ліцензований презентер компанії Fitboots, майстер-тренер програми Ultimate Fit Jumps та єдина людина у світі, яка отримала майстра-тренера з програми Ultimate Fit Urban.",
+        "Марина Чарковська — міжнародний ліцензований презентер компанії Fitboots, сертифікований інструктор програм Ultimate Fit Jumps та Ultimate Fit Urban.",
+        "Ця команда заряджає з першого стрибка і до останньої хвилини. Вони є серцем Fitboots в Україні. Їх досвід та енергія надихають на рух і допомагають кожному відкрити для себе новий рівень фітнесу!"
+      ]
+    },
+    {
+      name:"Катерина Каленчук",
+      role:"Засновниця KJ Jump Skill, м. Дніпро",
+      photo:"assets/instr_02.webp",
+      bio:[
+        "Фітнес-тренерка, презентерка та засновниця студії KJ Jump Skill. Сертифікований інструктор Rebound Fitness Ultimate Fit, Rebound Fitness Ultimate Fit Urban, Bungee Fitness, Jumping Fitness та інших сучасних фітнес-напрямків.",
+        "Понад 4 роки досвіду в індустрії фітнесу, організаторка фітнес-фестивалів та авторка енергійних тренувальних програм, які поєднують ефективність, безпеку та мотивацію."
+      ]
+    },
+    {
+      name:"Наталія Ільків, Діана Сазонова та Катерина Негода",
+      role:"Тренерська команда",
+      photo:"assets/instr_03.webp",
+      bio:[
+        "Наталія Ільків — тренер-реабілітолог із понад 11-річним досвідом у фітнесі. Rebound Fitness для неї — не просто напрямок, а справжній драйв, енергія та антистрес в одному занятті. Тренування — мікс користі, настрою та атмосфери, після яких хочеться повертатись знову.",
+        "Діана Сазонова — фітнес-тренерка з понад 9-річним досвідом, експертка Jumping Fitness, Step та функціонального тренінгу. Засновниця однієї з найактивніших фітнес-спільнот Запоріжжя, відома харизмою та потужною енергетикою.",
+        "Катерина Негода — інструктор з Rebound Fitness, м. Запоріжжя. Дарує учасницям справжні емоції на тренуваннях, заряджаючи енергією та гарним настроєм з перших хвилин заняття."
+      ]
+    },
+    {
+      name:"Юхно Аліна",
+      role:"Rebound Fitness, м. Дніпро",
+      photo:"assets/instr_04.webp",
+      bio:[
+        "В ребаунд-фітнесі вже 9 років. З 2024 року — сертифікований інструктор Fit Boots. Активно бере участь у майстер-класах, фітнес-фестивалях і спортивних заходах, постійно розвиваючи навички та надихаючись новими ідеями.",
+        "На заняттях поєднує потужне кардіо-навантаження, вправи на баланс та координацію з драйвовою атмосферою, яка заряджає енергією і ендорфінами."
+      ]
+    },
+    {
+      name:"Маргаріта Шелупець",
+      role:"Rebound Fitness",
+      photo:"assets/instr_05.webp",
+      bio:[
+        "Допомагає знаходити свій ритм у Rebound Fitness та рухатися до результату без зайвого стресу."
+      ]
+    },
+    {
+      name:"Філіпенко Аліна",
+      role:"Rebound Fitness",
+      photo:"assets/instr_06.webp",
+      bio:[
+        "Ліцензований інструктор Rebound Fitness з 4-річним досвідом викладання. Стрибки — це любов і драйв, те, що заряджає енергією щодня.",
+        "Мета — показати, що тренування можуть бути не «обов'язком», а справжнім задоволенням на 100%. Приєднуйся — і відчуєш, як твоє тіло й душа стрибають у ритмі щастя! «Не чекай натхнення — стрибай за ним!»"
+      ]
+    },
+    {
+      name:"Ліза Товпига",
+      role:"Rebound Fitness",
+      photo:"assets/instr_07.webp",
+      bio:[
+        "Інструкторка Rebound Fitness, для якої це не просто спорт, а стиль життя. Обіцяє: буде музика, буде рух, буде кайф!"
+      ]
+    },
+    {
+      name:"Притульська Анна",
+      role:"Rebound Fitness, Pilates, BFB",
+      photo:"assets/instr_08.webp",
+      bio:[
+        "Фітнес-тренерка з 9-річним досвідом. Основні напрями — Rebound Fitness, Pilates та BFB.",
+        "Переконана, що спорт має приносити задоволення, а не бути покаранням — тому на тренуваннях завжди панує дружня атмосфера, підтримка та мотивація."
+      ]
+    },
+    {
+      name:"Гасимова Лейла",
+      role:"Jumping Fitness, дієтологія",
+      photo:"assets/instr_09.webp",
+      bio:[
+        "Фітнес-тренерка та дієтологиня, експертка з Jumping Fitness і функціонального тренінгу. З 2019 року допомагає жінкам змінювати тіло та життя, спеціалізується на схудненні та роботі з Plus Size групами.",
+        "Її тренування — це драйв, емоції, адреналін і віра в те, що неможливого не існує."
+      ]
+    },
+    {
+      name:"Ольга Малиш",
+      role:"Rebound Fitness",
+      photo:"assets/instr_10.webp",
+      bio:[
+        "10+ років у Rebound Fitness: 6 років як клієнтка, майже 4 роки як тренерка. За цей час перепробувала багато напрямів фітнесу (степ, 90-60-90, функціонал, пілатес), але Rebound з Fit Boots стали справжньою любов'ю.",
+        "«Рух — це енергія! Стрибок — це свобода!» Допомагає дівчатам повірити у себе, полюбити рух та отримувати задоволення від тренувань. Fit Boots — це сила, витривалість, драйв і позитив."
+      ]
+    },
+    {
+      name:"Світлана Хричова",
+      role:"ZUMBA, Jumping Fitness",
+      photo:"assets/instr_11.webp",
+      bio:[
+        "Інструкторка Zumba і Jumping Fitness. Презентерка й учасниця європейських та українських фестивалів і фітнес-конвенцій, організаторка майстер-класів.",
+        "Вчить дівчат любити себе — різну, бо кожна унікальна і неповторна!"
+      ]
+    },
+    {
+      name:"Таємний презентер",
+      role:"Інтрига 👀",
+      mystery:true,
+      bio:[
+        "Хто це — дізнаєшся зовсім скоро! Слідкуй за анонсами фестивалю в Instagram, щоб не пропустити."
+      ]
+    }
   ];
   var instrTrack = document.getElementById('instrTrack');
   var placeholderSVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg>';
+  var mysterySVG = '<div style="font-family:var(--f-display);font-size:64px;color:rgba(255,255,255,.25);">?</div>';
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function cardVisual(inst){
+    if(inst.photo) return '<img src="' + inst.photo + '" loading="lazy" alt="' + escapeHtml(inst.name) + '" style="width:100%;height:100%;object-fit:cover;">';
+    if(inst.mystery) return mysterySVG;
+    return placeholderSVG;
+  }
 
   instructors.forEach(function(inst, i){
     var card = document.createElement('div');
-    card.className = 'instr-card reveal';
+    card.className = 'instr-card reveal' + (inst.mystery ? ' instr-card--mystery' : '');
     card.innerHTML =
-      '<div class="instr-card__ph">' + placeholderSVG + '</div>' +
+      '<div class="instr-card__ph">' + cardVisual(inst) + '</div>' +
       '<div class="instr-card__info">' +
-        '<div class="instr-card__name">' + inst.name + '</div>' +
-        '<div class="instr-card__role">' + inst.role + '</div>' +
+        '<div class="instr-card__name">' + escapeHtml(inst.name) + '</div>' +
+        '<div class="instr-card__role">' + escapeHtml(inst.role) + '</div>' +
         '<button class="instr-card__more" data-idx="' + i + '">Детальніше</button>' +
       '</div>';
     instrTrack.appendChild(card);
@@ -176,11 +289,12 @@
     btn.addEventListener('click', function(){
       var i = +btn.dataset.idx;
       var inst = instructors[i];
+      var bioHtml = inst.bio.map(function(p){ return '<p style="color:var(--ink-dim);line-height:1.7;font-size:15px;margin-bottom:12px;">' + escapeHtml(p) + '</p>'; }).join('');
       document.getElementById('instrDetailBody').innerHTML =
-        '<div class="instr-card__ph" style="border-radius:16px;margin-bottom:20px;aspect-ratio:16/9;">' + placeholderSVG + '</div>' +
-        '<h3>' + inst.name + '</h3>' +
-        '<p class="hint">' + inst.role + '</p>' +
-        '<p style="color:var(--ink-dim);line-height:1.7;font-size:15px;">Фото та повний опис інструктора зʼявляться найближчим часом. Слідкуй за оновленнями в Instagram фестивалю, щоб дізнатись більше про досвід та стиль викладання.</p>';
+        '<div class="instr-card__ph" style="border-radius:16px;margin-bottom:20px;aspect-ratio:4/5;">' + cardVisual(inst) + '</div>' +
+        '<h3>' + escapeHtml(inst.name) + '</h3>' +
+        '<p class="hint">' + escapeHtml(inst.role) + '</p>' +
+        bioHtml;
       openModal('instrOverlay');
     });
   });
